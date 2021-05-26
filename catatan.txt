@@ -1,0 +1,65 @@
+#Rumusan Masalah
+
+Pengamatan yang ditemukan setelah melihat kondisi yang ada di dalam Screenhouse Puslitbang Hortikultura, akan meneliti cara budi daya tanaman buah melon yang ditanam secara hidroponik tentunya dengan dasar bidang kajian yang dimiliki.
+
+Tanaman buah melon ini memiliki kharakteristik yang cukup kuat terhadap panas, namun di dalam penerepan menggunakan media tanam hidroponik akan sangat membutuhkan kelembaban media tanam yang cukup konsisten, berbeda dengan tanah yang memiliki kelembaban dan unsur-unsur lainnya sehingga dapat di serap oleh tanaman. Penyiraman tanaman hidroponik langsung pemberian nutrisinya dengan campuran air dalam penyiramannya, nutrisi untuk tanaman hidroponik ini umumnya menggunakan pupuk atau nutrisi yang sering disebut ABMIX.
+
+Penyiraman tanaman buah melon di Screenhouse sebelumnya sudah ada menggunakan sistem irigasi tetes namun masih belum tepat dalam fungsi pemasangannya, jadi akan dibuat sistem irigasi tersebut terkhusus tanaman buah melon.
+
+Penerapan dari yang ditemukan pada tanaman buah melon ini maka dibuat otomatisasi penyiraman tanaman buah melon, dan monitoring khusus nutrisi yang digunakan sekaligus pada penyiraman didalam air tandon yang berisi nutrisi ABMIX.
+
+#Tujuan
+Tujuan dari pembuatan alat ini adalah mengimplementasikan alat dari judul Implementasi Irigisasi Tetes dan Rekomendasi Pemberian Nutrisi Tanaman Melon di Puslitbang Hortikultura agar dapat membantu dalam proses pertumbuhan budidaya tanaman terkhusus tanaman buah melon berupa penyiraman otomatis tanaman. Nutrisi tanaman melon dapat di monitoring dengan website secara realtime dan memberikan rekomendasi nutrisi pada tanaman buah melon, di dalam Web memberikan laporan berupa data yang ada pada nilai realtime sekali 15 menit dan dapat diunduh dan dicetak.
+
+
+#Manfaat
+Alat yang akan dibuat diharapkan memiliki manfaat dalam membantu petugas di Screenhouse atau pihak Puslitbang Hortikultura dalam budidaya tanaman buah melon. Penyiraman secara otomatis dilakukan terhadap tanaman buah melon dan nutrisi hidroponik khusus tanaman buah melon dapat dimonitoring, dan dapat dilihat secara realtime di Web. Rekomendasi nutrisi terdapat didalam web apabila petugas ingin memastikan berapa jumlah atau nilai nutrisi yang ada khusus tanaman buah melon.
+
+
+#Ruang lingkup
+Ruang lingkup yang menjadi Implementasi Irigasi Tetes dan Rekomendasi Pemberian Nutrisi Tanaman Melon di Puslitbang Hortikultura adalah:
+1. Tanaman di dalam Screenhouse pengaplikasian alatnya terkhusus untuk tanaman buah melon
+2. Media tanam yang digunakan Cocopeat dan Arang Sekam
+3. Penyiraman tanaman menggunakan sistem irigasi tetes
+4. Penyiraman otomatis dapat dilakukan sesuai keadaan kelembaban media tanah yang direspon oleh sensor soil moisture
+5. Pengaplikasian alat menggunakan Mikrokontroler Esp32
+6. Alat dapat berjalan ketika telah terkoneksi dengan internet
+7. Alat dapat memonitoring nutrisi air dan, suhu air dan soil moisture
+8. Dua macam media tampilan yaitu menggunakan LCD I2C 20x04 dan Web yang telah dibuat secara realtime
+9. Di dalam Web terdapat tombol rekomendasi nutrisi sesuai pertumbuhan tanaman melon saat ini
+
+#Lokasi dan Waktu PKL
+Kegiatan Praktik Kerja Lapangan (PKL) akan dilaksanakan di Kantor Pusat Penelitian dan Pengembangan Hortikultura, Jl. Tentara Pelajar No. 3C Kampus Penelitian Pertanian Cimanggu, Kota Bogor. Praktik Kerja Lapangan WFO (Work From Office) dimulai dari tanggal 1 Februari sampai dengan 8 April 2021. sesuai dengan waktu pegawai disana bekerja dihari senin sampai kamis bekerja dari jam 08.00 WIB sampai 15.00 WIB dan dihari jum'at bekerja dari jam 09.00 WIB sampai 15.30 WIB.
+
+#Metode Bidang Kajian
+pada Gambar- menjelaskan alur dalam pengerjaan alat Implementasi Irigisasi Tetes dan Rekomendasi Pemberian Nutrisi Tanaman Melon di Puslitbang Hortikultura. Metode yang digunakan terdiri Identifikasi Masalah dan Studi Literatur, Analisis dan Perancangan, kemudian Pengembangan dan Implementasi. Dari tahapan tersebut dilakukan secara berurutan.
+
+*Gambar 1 Metode Pembuatan Alat
+
+1. Identifikasi Masalah dan Studi Literatur
+Tahapan ini yaitu melakukan survei secara langsung hal yang menjadi permasalahan dan kebutuhannya sesuai dengan bidang kajian yang dimiliki, dan Studi Literatur terhadap apa yang menjadi acuan yang telah dilakukan oleh banyak orang dalam pembuatan alatnya.
+2. Analisis dan Perancangan
+Tahapan analisis tersebut maksudnya berupa perbandingan alat atau yang dimiliki keadaan saat ini dengan yang akan dibuat menjadi alat sesuai dengan studi literatur yang didapat. Kemudian Perancangan berupa penggambaran Skema rangkaian, Flowchart, peletakan alat Casing dan penggambaran lainnya sehingga dapat membantu dalam pembuatan menjadi lebih terarah.
+3. Pengembangan dan Implementasi
+Tahapan pengembangan dimaksud adalah eksekusi pembuatan alat dan juga pengujian secara langsung, karena dalam pembuatan alat tidak selamanya dapat benar dalam proses pemasangan alat. Kemudian tahapan implementasi berupa alat yang sudah diletakkan dan dapat dijalankan sesuai fungsinya yang di tentukan pada tujuan awal.
+
+#Sejarah
+Pusat Penelitian dan Pengembangan Hortikultura adalah salah satu pusat lembaga dibawah Badan Penelitian dan Pengembangan Pertanian yang bertempat di Bogor, Jawa Barat.  Pusat Penelitian dan Pengembangan Hortikultura biasa disingkat Puslitbang Hortikultura berdiri sejak tahun 1984 yang merupakan bagian dari ranah Badan Litbang Pertanian disingkat Balitbangtan yang memiliki tugas dalam melaksanakan penelitian dan pengembangan untuk menghasilkan teknologi tinggi dan strategis komoditas hortikultura seperti tanaman hias, tanaman sayuran, dan tanaman buah tropika maupun subtropika. dimana unit kerja yang membawahi dari Puslitbang Hortikultura adalah Balai Penelitian Tanaman Sayuran (Lembang), Balai Penelitian Tanaman Buah Tropika (Solok), Balai Penelitian Tanaman Hias (Cianjur), dan Balai Penelitian Tanaman Jeruk dan Buah Sub Tropik (Malang).
+
+Sarana Kerja yang terdapat di Puslitbang Hortikultura berupa Pos Keamanan, Lobi, Kantor Administrasi, Ruang Rapat, Screenhouse, Mushollah, Tempat Parkir, Toilet, dan Sebagainya.
+
+#Kegiatan
+Lingkup kegiatan Puslitbang Hortikultura yaitu:
+Menghasilkan VUB, benih sumber, inovasi teknologi, dan rekomendasi kebijakan Hortikultura.
+Mengakselerasi dan meningkatkan adopsi teknologi hortikultura bekerjasama dengan institusi terkait.
+
+#Visi
+Visi Puslitbang Hortikultura adalah Menjadi Lembaga Penelitian dan 
+Pengembangan Terkemuka Penghasil Inovasi Hortikultura Mendukung 
+Agribisnis Hortikultura Modern.
+
+#Misi
+Untuk mencapai visi tersebut, Puslitbang Hortikultura mempunyai misi sebagai 
+berikut:
+1. Menghasilkan teknologi inovasi yang memiliki karakter tepat guna, efisien, efektif, dan berkelanjutan;
+2. Pengembangan sistem diseminasi teknologi inovasi yang efektif dan efisien.
