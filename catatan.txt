@@ -8,6 +8,17 @@ Penyiraman tanaman buah melon di Screenhouse sebelumnya sudah ada menggunakan si
 
 Penerapan dari yang ditemukan pada tanaman buah melon ini maka dibuat otomatisasi penyiraman tanaman buah melon, dan monitoring khusus nutrisi yang digunakan sekaligus pada penyiraman didalam air tandon yang berisi nutrisi ABMIX.
 
+###########################3
+Berdasarkan latar belakang dari penelitian tentang Implementasi Irigisasi Tetes dan Rekomendasi Pemberian Nutrisi Tanaman Melon di Puslitbang Hortikultura, terhadap pembuatan alat tersebut maka bisa dirumuskan beberapa masalah berikut ini:
+
+- Apa yang ditemukan setelah melihat kondisi yang ada di dalam Screenhouse Puslitbang Hortikultura?
+- Mengapa memilih tanaman buah melon dalam penelitian pembuatan alat tersebut?
+- Mengapa menggunakan sistem irigasi tetes?
+- Berapa Indikator yang digunakan dalam penyiraman tanaman buah melon?
+- Seberapa pentingkah Nutrisi pada pertumbuhan buah melon hidroponik?
+- Bagaimana Nutrisi dapat dipantau?
+- Apa saja yang ditampilkan oleh Web?
+
 #Tujuan
 Tujuan dari pembuatan alat ini adalah mengimplementasikan alat dari judul Implementasi Irigisasi Tetes dan Rekomendasi Pemberian Nutrisi Tanaman Melon di Puslitbang Hortikultura agar dapat membantu dalam proses pertumbuhan budidaya tanaman terkhusus tanaman buah melon berupa penyiraman otomatis tanaman. Nutrisi tanaman melon dapat di monitoring dengan website secara realtime dan memberikan rekomendasi nutrisi pada tanaman buah melon, di dalam Web memberikan laporan berupa data yang ada pada nilai realtime sekali 15 menit dan dapat diunduh dan dicetak.
 
