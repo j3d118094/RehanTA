@@ -143,3 +143,15 @@ LCD (Liquid Cristal Display) I2C 20X04 adalah alat yang dapat membantu dalam mem
 
 #Pompa Air
 Pompa air berkerja untuk menarik air yang diteruskan ketujuan yang dinginkan, dari penggunaannya saat ini menggunakan pompa air arus ac. pompa air ini yang nanti menyala atau tidaknya dibantu dengan arus yang diterima dari relay.
+
+#Adapter 5V
+Adapter 5V adalah alat yang berfungsi sebagai penerus arus yang diberikan dengan nilai yang telah ditentukan dimana mengubanh arus AC 220 W menjadi arus DC 5V. dengan penggunaannya ini juga dibantu menggunakan kabel data karena akan lebih membantu juga dalam proses menginputkan program kedalam ESP32 nantinya bila menggunakan kabel data.
+https://www.blibli.com/p/oppo-ak933-travel-charger-kabel-data-usb-micro-5v-2a-original-910685/pc--MTA-7893885
+
+https://www.blibli.com/
+
+#Arduino IDE
+Arduino IDE merupakan software yang khusus digunakan dalam pembuatan pemrograman Arduino, menggunakan bahasa pemrograman C/C++. Singkatan IDE sendiri adalah Integrated Development Enviroenment penjelasan singkatnya adalah lingkungan terintegrasi yang dapat digunakan sebagai pengembangan. Jadi dalam penggunaan Arduino IDE ini untuk membuat dan mengembangkan pemrograman dengan alat yang terintegrasi dengan arduino.
+
+#Blok Diagram
+Pada penempatan yang dibuat dengan blok diagram yang dapat dilihat pada Gambar _ menyatakan bahwa Sensor TDS Meter, Sensor Suhu Air, dan Sensor Soil Moisture adalah Input dari data yang diberi tanda berupa warna garis merah putus-putus, kemudian dilanjutkan kepada tahap ESP32 yang diberi tanda garis hijau adalah tempat memproses atau otak dari alat tersebut, kemudian Website dan LCD I2C 20x04 diberi tanda dengan garis putus-putus berwarna biru diartikan merupakan Output dari tampilan hasil monitoring alat, dan yang tertakhir adalah Relay Pompa Air yang ditandai dengan garis putus-putus berwarna orange dimaksud adalah hasil akhir dari Relay yang mengendalikan Arus listrik pada pompa air, nyala atau tidaknya pompa air.
