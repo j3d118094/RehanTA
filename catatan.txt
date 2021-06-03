@@ -1,3 +1,8 @@
+Implementasi Irigisasi Tetes dan Rekomendasi Pemberian Nutrisi Tanaman Melon di Puslitbang Hortikultura
+Ringga Gilang Baskoro, S.Kom, M.Kom.
+NPI. 2012.8.0081
+Dr. Inna Novianty, S.Si., M.Si.
+NIP. 201811198611192001
 #Rumusan Masalah
 
 Pengamatan yang ditemukan setelah melihat kondisi yang ada di dalam Screenhouse Puslitbang Hortikultura, akan meneliti cara budi daya tanaman buah melon yang ditanam secara hidroponik tentunya dengan dasar bidang kajian yang dimiliki.
@@ -74,3 +79,67 @@ Untuk mencapai visi tersebut, Puslitbang Hortikultura mempunyai misi sebagai
 berikut:
 1. Menghasilkan teknologi inovasi yang memiliki karakter tepat guna, efisien, efektif, dan berkelanjutan;
 2. Pengembangan sistem diseminasi teknologi inovasi yang efektif dan efisien.
+
+
+#Analisis Masalah
+Analisis masalah merupakan tahapan untuk mencari tahu permasalahan yang ada ataupun permasalahan saat proses pengerjaan alat dan juga faktor yang menjadi bagian kesulitan yang dimiliki oleh pihak terkait.
+
+#Analisis Kebutuhan
+Analisis kebutuhan berupa tahapan untuk mengetahui yang dibutuhkan dalam pembuatan alat baik dari instalasi sistem irigasi tetes hidroponik dan penetapan kebutuhan perangkat keras. Setiap komponen yang sudah jelas dan tersusun sesuai dengan fungsi yang akan dibuat.
+
+#Blok Diagram
+Blok diagram adalah diagram yang umumnya digunakan untuk menggambarkan rekayasa berjalannya sistem, yang fungsinya dibuat dengan menggunakan blok terdiri dari hubungan gari-garis sehingga dapat dimengerti dan mudah untuk dipahami sekalipun bukan yang mengerti dibidangnya.
+
+#Flow Chart
+flow Chart adalah suatu bagan yang memiliki susunan atau urutan yang mendetail dalam suatu proses didalam sistem, pada bagannya menggunakan simbol yang memiliki arti dari setiap fungsi yang digunakan. Sehingga setiap alur yang digunakan pada sistem dapat dimengerti dengan mudah.
+
+#Skema Rangkaian
+Tahapan ini merupakan dari penggambaran jelas alat yang akan dipasang sesuai dengan penempatan baik secara pengkabelan, port-port alat yang digunakan dan juga terhubungnya sensor dengan mikrokontroler yang digunakan.
+
+#Model Komunikasi data
+Model komunikasi data merupakan cara aliran data dapat disampaikan antara device ke device lainnya. Output yang diterima bisa berupa informasi atau file data.
+
+IMPLEMENTASI IRIGASI TETES DAN REKOMENDASI PEMBERIAN NUTRISI TANAMAN MELON 
+DI PUSLITBANG HORTIKULTURA
+
+#Analisis Masalah
+Bentuk permasalahan yang ditemukan di Puslitbang Hortikulura yaitu belum adanya penyiraman secara otomatis pada tanaman terkhusus tanaman buah melon, dan penerapan tanaman buah melon yang cukup membutuhkan penyiraman yang intensif. Pada saat keadaan kering dan membutuhkan nutrisi yang cukup dengan menggunakan sistem penanaman secara hidroponik dan juga pada pemasangan sistem irigasi tetes yang ada di Puslitbang Hortikultura masih belum sepenuhnya benar, sehingga masih ada beberapa yang perlu diperbaiki.
+
+#Analisis Kebutuhan
+Kebutuhan yang dianalisis dari Implementasi Irigisasi Tetes dan Rekomendasi Pemberian Nutrisi Tanaman Melon ini komponen apa saja yang dapat digunakan untuk pembuatan alat baik mikrokontroler, aplikasi, dan sensor yang digunakan.
+
+#Mikrokontroler Esp32
+Mikrokontroler Esp32 merupakan sebuah otak yang menjadi pengendali dalam sebuah sistem yang telah diprogram. Mikrokontroler Esp32 dikenalkan oleh Espressif System yang merupakan penerus dari mikrokontroler Esp8266. Pada modul Esp32 ini sudah memiliki penyedia WiFi di dalamnya sehingga dapat terkoneksi dengan internet sehingga mendukung dalam pembuatan sistem Internet of Things.
+
+#Sensor TDS
+Sensor TDS adalah sensor yang pengambilan nilainya secara analog yang dimana dapat mengukur berapa nilai padat yang terdapat dalam satu liter air dengan satuan yang dapat disebut ppm (parts-per million). Ketika semakin tingginnya nilai ppm berarti semakin banyak juga larutan padat didalam larutan air tersebut. Sensor TDS ini menggunakan probe untuk dapat dicelupkan kedalam laruta air yang akan dinilai. Penggunaan Sensor TDS ini harus dikalibrasi agar bisa sesuai dengan nilai yang dimiliki.
+
+====================
+Mikrokontroler Esp32
+Sensor TDS Meter
+Sensor Soil Moisture
+Relay
+LCD
+Pompa air
+Adaptor 5V
+Fritzing
+Arduino IDE
+Diagrams.net
+
+
+https://www.amazon.ae/
+https://www.dfrobot.com/
+==========================
+
+#Sensor Soil Moisture
+Soil Moisture adalah sensor yang dapat mendeteksi kelembaban tanah, dimana sensor ini memiliki 2 probe yang dapat melewatkan arus pada tanah, dimana membaca resistansinya agar mendapatkan tingkatan dari nilai kelembabannya.
+Semakin kering tanahnya maka akan semakin sulit untuk menghantarkan listrik, berarti resistansinya besar. Kemudian semakin lembab tanahnya maka akan semakin mudah dalam menghantarkan listrik yang berarti resistansinya kecil.
+
+#Relay
+Relay adalah komponen elektronika berupa saklar listrik dapat mengendalikan arus AC dengan cara menggunakan arus DC sebagai pengacu arusnya. Relay tersebut menjadi tuas saklar dengan lilitan kawat. kontak akan tertutup atau terbuka yang dipengaruhi induksi magnet. Terdapat 2 bagian keadaan kontak poin pada relay yaitu Normally Close (NC) dan Normally Open(No). Normally Open ada keadaan posisi awal sebelum diaktifkan atau belum mendapatkan arus akan selalu berada di posisi close/tertutup, sedangkan Normally Open adalah keadaan posisi sudah diaktifkan dan sudah diberi arus akan berada di posisi Normally Open.
+
+#LCD i2C 20x04
+LCD (Liquid Cristal Display) I2C 20X04 adalah alat yang dapat membantu dalam memantau dengan fungsi menampilkan apa yang sudah diprogram terhadap LCD tersebut. dimana sudah menggunakan. Arduino sudah mendukung komunikasi I2C dengan module lcd dimana kita dapat mengontrol LCD karakter 20x04 dengan hanya menggunakan 2 pin SCL dan SDA.
+
+#Pompa Air
+Pompa air berkerja untuk menarik air yang diteruskan ketujuan yang dinginkan, dari penggunaannya saat ini menggunakan pompa air arus ac. pompa air ini yang nanti menyala atau tidaknya dibantu dengan arus yang diterima dari relay.
