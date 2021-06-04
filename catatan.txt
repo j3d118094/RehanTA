@@ -2,7 +2,9 @@ Implementasi Irigisasi Tetes dan Rekomendasi Pemberian Nutrisi Tanaman Melon di 
 Ringga Gilang Baskoro, S.Kom, M.Kom.
 NPI. 2012.8.0081
 Dr. Inna Novianty, S.Si., M.Si.
-NIP. 201811198611192001
+NPI. 20181119861119 2 014
+
+Dr. Ir. Arief Darjanto, Dip.Ag.Ec., M.Ec.
 #Rumusan Masalah
 
 Pengamatan yang ditemukan setelah melihat kondisi yang ada di dalam Screenhouse Puslitbang Hortikultura, akan meneliti cara budi daya tanaman buah melon yang ditanam secara hidroponik tentunya dengan dasar bidang kajian yang dimiliki.
@@ -153,5 +155,28 @@ https://www.blibli.com/
 #Arduino IDE
 Arduino IDE merupakan software yang khusus digunakan dalam pembuatan pemrograman Arduino, menggunakan bahasa pemrograman C/C++. Singkatan IDE sendiri adalah Integrated Development Enviroenment penjelasan singkatnya adalah lingkungan terintegrasi yang dapat digunakan sebagai pengembangan. Jadi dalam penggunaan Arduino IDE ini untuk membuat dan mengembangkan pemrograman dengan alat yang terintegrasi dengan arduino.
 
+#Diagrams.net
+Diagrams.net adalah sebuah website yang dapat digunakan untuk membuat berbagai macam diagram, selain dengan web Diagrams.net ini juga dapat digunakan secara langsung dengan mendownloadnya secara gratis sehingga dapat membuat diagram dengan mudah tanpa terkoneksi dengan internet.
+
+#Fritzing
+Fritsing adalah software yang dapat membuat skema rangkaian yang bagus karena dalam tampilannya sama dengan alat yang digunakan komponen elektronika yang dipakai pada alat yang akan dibuat. Fritzing terdapat skema alat yang bisa dipakai dari berbagai mikrokontroler arduino.
+
 #Blok Diagram
 Pada penempatan yang dibuat dengan blok diagram yang dapat dilihat pada Gambar _ menyatakan bahwa Sensor TDS Meter, Sensor Suhu Air, dan Sensor Soil Moisture adalah Input dari data yang diberi tanda berupa warna garis merah putus-putus, kemudian dilanjutkan kepada tahap ESP32 yang diberi tanda garis hijau adalah tempat memproses atau otak dari alat tersebut, kemudian Website dan LCD I2C 20x04 diberi tanda dengan garis putus-putus berwarna biru diartikan merupakan Output dari tampilan hasil monitoring alat, dan yang tertakhir adalah Relay Pompa Air yang ditandai dengan garis putus-putus berwarna orange dimaksud adalah hasil akhir dari Relay yang mengendalikan Arus listrik pada pompa air, nyala atau tidaknya pompa air.
+
+#Identifikasi Masalah dan Studi Literatur
+Mengidentifikasi secara langsung atau melihat keadaan yang ada di Screenhouse Puslitbang Hortikultura dari berbagai macam tanaman yang ada di dalamnya. Tanaman Buah Melon (Cucumis melo L.) salah satu tanaman yang memang memiliki indikasi tanaman yang cukup sulit untuk tumbuh dengan berbagai faktor, tanaman hidroponik dalam tanaman melon hidroponik sulit tumbuh saat keadaan nutrisinya kurang atau bahkan kelebihan dan bahkan kering. Studi literatur yang dilakukan yaitu pada penanaman buah melon dapat dilakukan penanaman cara hidroponik berupa penggunaan arang sekam ataupun dengan Cocopeat, tentunya bukan lagi menggunakan NPK atau pupuk tanah pada umumnya, namun menggunakan nutrisi khusus tanaman secara hidroponik yaitu yang digunakan berupa nutrisi khusus buah AB MIX. Salah satu faktor penting keberhasilan budidaya tanaman hidroponik adalah kepekatan larutan nutrisi yang digunakan(Sesanti 2018). Penyiraman tersebut agar dapat dilakukan secara otomatis dan sesuai dengan tanaman buah melon, maka digunakannya sistem irigasi tetes. Sistem irigasi tetes ini dapat membantu penyiraman yang merata terhadap tanaman buah melon, juga hemat dalam pengeluaran air yang berlebih (Ridwan 2013). Disamping itu nutrisi pada AB MIX juga akan dapat dibaca menggunakan sensor TDS meter yang dapat terintegrasi dengan Mikrokontroler Esp32.
+
+Selain penyiraman otomatis juga akan memberikan nilai rekomendasi nutrisi yang ditampilkan di Website secara realtime termasuk sensor suhu air dan Soil Moisture yang digunakan. Nilai nutrisi tidak dapat menentukan kadar ukurannya sendiri namun yang perlu diketahui sudah berumur berapa atau sudah sampai mana pertumbuhan tanaman buah melon berlangsung.
+
+#Tahap Analisis dan Perancangan
+Tahap analisis di sini berupa keadaan awal di Screenhouse Puslitbang Hortikultura sudah ada penanaman tanaman buah melon secara irigasi tetes namun dalam bentuk pemasangannya masih belum dikatakan benar, kemudian dalam penanamannya menggunakan media tanah yang pada dasarnya pemberian nutrisi yang digunakan umumnya pupuk kandang atau NPK. Hal yang akan menjadi perbandingan dibuat nantinya berupa pembuatan Sistem Irigasi Tetes dengan tanaman buah melon yang ditanam secara Hidroponik yaitu media Cocopeat dan Arang Sekam, yang akan diberi nutrisi AB-MIX secara otomatis dengan alat yang dibuat.
+Pada media Cocopeat dan arang sekam medianya tidak dicampur namun peletakkannya diatur sesuai dengan kebutuhan apa yang ada pada tanaman buah melon, Cocopeat memiliki daya serap air yang cukup kuat dibandingkan dengan arang sekam di samping itu media ini memiliki kemampuan untuk mengikat akar (Irawan dan Hidayah 2014), namun Arang sekam lebih berongga sehingga arang sekam diletakkan paling bawah di Polybag karena akan membantu pertumbuhan akar menyebar pada tanaman buah melon setelah itu media Cocopeat di atasnya yang akan mempertahankan kelembaban pada tanaman buah melon dan nutrisi perlahan akan mudah diserap oleh akar tanaman buah melon.
+Alat yang akan dibuat berupa penyiraman secara otomatis pada tanaman buah melon yang akan dimonitoring di LCD dan juga di Website. Sehingga pada pemberian nutrisi dapat dilihat dan dapat di atur sesuai skala nutrisi yang dibutuhkan. Pada Website yang dibuat akan menampilkan nilai Nutrisi, Suhu Air dan juga Soil Moisture. Pada Website terdapat tampilan button atau juga tab yang akan memberikan notifikasi nutrisi kurang atau tidak, dan memberikan rekomendasi jumlah nutrisi yang diberikan sesuai dengan pertumbuhan tanaman buah melon.
+
+Suhu air berpengaruh terhadap perubahan nilai nutrisi semakin tinggi suhu airnya maka nilai nutrisi menurun dan sebaliknya apabila nilai suhu air rendah maka nilai nutrisi semakin naik. Soil Moisture akan menampilkan perubahan nilai persentase dari kelembaban yang ada pada media tanam, karena Cocopeat yang menjadi media tanam paling atas maka sensor Soil Moisture diletakkan dimedia Cocopeat.
+Tahap perancangan berupa perangkaian skema berupa penggambaran alat yang akan dibuat sehingga dengan adanya skema dapat membantu dalam pengerjaan dan lebih terarah, perangkaian alat, hingga pemasangan casing pada alat. Tahap perancangan pada alat yang dibuat pada Implementasi Irigisasi Tetes dan Rekomendasi Pemberian Nutrisi Tanaman Melon di Puslitbang Hortikultura ini menggunakan Mikrokontroler Esp32 yang dapat diprogram dan terkoneksi dengan WiFi (Muliadi et al. 2020),kemudian menggunakan 3 sensor yaitu sensor TDS meter, Sensor Suhu Air, dan sensor Soil Moisture, akan dimonitoring dengan dua media yaitu LCD 20x04 dan Website secara Realtime. Berikut Flowchart yang digunakan dapat dilihat pada Gambar 2.
+
+
+#link ABMIX 
+https://blogidn.com/tahapan-pemberian-nutrisi-ab-mix-melon-hidroponik/
